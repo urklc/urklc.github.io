@@ -84,3 +84,6 @@ exclude:
   - CNAME
 
 theme: jekyll-theme-cayman
+
+cayman-blog:
+  date_format: "%b %-d, %Y"
