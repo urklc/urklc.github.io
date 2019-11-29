@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 6 Things to Consider When Developing Push (Remote) Notifications on iOS
+author: Uğur Kılıç
 ---
 
 1. Don't convert the `deviceToken` you get from APNS to **String** using `description` property. Convert the byte sequence manually since `description` doesn't return corresponding hexadecimal representation for applications built against iOS 13 SDK.

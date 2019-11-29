@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Storing objects with JSON representation using Swift
+author: Uğur Kılıç
 ---
 
 Storing objects is always a major requirement for a mobile application. Although there are several long-er ways such as creating an sqlite database, usage of frameworks such as CoreData; just saving your objects as some kind of data representation directly will be enough for most of the apps. You can also use `NSKeyedArchiver / NSKeyedUnarchiver` for this kind of simple operation, I’m going to show a way to create a dictionary representation for an object and use that for storing. You might need that dictionaries for http requests or pretty logging later.  

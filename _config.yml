@@ -30,6 +30,12 @@ footer-links:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
 
+cayman-blog:
+  date_format: "%b %-d, %Y"
+
+github:
+  is_project_page: true
+
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
@@ -85,6 +91,3 @@ exclude:
   - CNAME
 
 theme: jekyll-theme-cayman
-
-cayman-blog:
-  date_format: "%b %-d, %Y"
