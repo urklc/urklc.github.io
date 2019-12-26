@@ -4,9 +4,9 @@ title: Using protocols that have associated type requirements as a generic const
 author: Uğur Kılıç
 ---
 
-Whenever you go beyond s classical protocol oriented programming practices, and use protocols for a variety of functionality across your code; you face this noted error with Swift. Next, you suddenly change most of your implementation or try to work around it by searching solutions online.
+Whenever you go beyond classical protocol oriented programming practices, and use protocols for a variety of functionality across your code; you face this noted error with Swift. Next, you suddenly change most of your implementation or try to workaround it by searching solutions online.
 
-I guess understanding the reasoning begind this error leads to better designs before implementing something. Let's say we have a `Comparable` protocol as: 
+I guess understanding the reasoning behind this error leads to better software design before implementation. Let's say we have a `Comparable` protocol as: 
 
 ```swift
 protocol Comparable {
@@ -14,9 +14,9 @@ protocol Comparable {
 }
 ```
 
-`Self` is an associated type. Associated types (as an instance variable or a function argument) are decided by the implementation that associated with them. `Comparable` protocol has appearently **Self (or associated type) requirement**. You cannot use `Comparable` type as an argument to the function to specialize the implementations based on the type conforming it.
+`Self` is an associated type. Associated types (as an instance variable or a function argument) are decided by the implementation that associates with them. `Comparable` protocol has appearently **Self (or associated type) requirement**. You cannot have a direct reference to it and call its functions.
 
-Create `Animal` and `Person` structs conforming the protocol:
+To understand why, we will create `Animal` and `Person` structs conforming the protocol:
 
 ```swift
 struct Animal: Comparable {
@@ -36,8 +36,8 @@ struct Person: Comparable {
 }
 ```
 
-Animals are being compared by their ages, and Person instances are being compared by alphabetical positions. 
-Makes sense for our example. Finally if you want to write a function to sort any comparable list with comparing them:
+Animals are being compared by their ages and Person instances are being compared by alphabetical positions. 
+Totally makes sense for our example. Finally if you want to write a function to sort any `Comparable` list with comparing them:
 
 ```swift
 struct Utility {
@@ -49,7 +49,9 @@ struct Utility {
 }
 ```
 
-Here we get the compiler error as **error: protocol 'Comparable' can only be used as a generic constraint because it has Self or associated type requirements**. Although its not visible at first look, the reason of this error is that if you have a reference to an object via a `Comparable` pointer instance, you will have an opportunity to call its functions. Within the function let's take first element in array to operate on it:
+Here we get a compiler error as **error: protocol 'Comparable' can only be used as a generic constraint because it has Self or associated type requirements**. Although it's not visible at first look, the reason of this error is that if you have a reference to an object via a `Comparable` pointer instance, you will have an opportunity to call its functions.
+
+Within the sort function let's take the first element in array to operate on it:
 
 ```swift
 let firstComparable = comparables.first
@@ -61,6 +63,8 @@ firstComparable.compare(...)
 ```
 
 Any implementation that results in a reference pointer of a `Comparable` instance directly will produce this error.
+
+### Solution
 
 See the first section of the error: **protocol 'Comparable' can only be used as a generic constraint**. Generics allow us to decide the function/class parameters at function call time. Thus we will be able to force any function parameter to a specific concrete type. Let's fix the issue in `Utility` function:
 
