@@ -49,6 +49,8 @@ struct Utility {
 }
 ```
 
+From the protocol point of view, this should be legal. But how the compiler will compare `age` and `name` values of two different `Comparable` implementations `Animal` and `Person`.
+
 Here we get a compiler error as **error: protocol 'Comparable' can only be used as a generic constraint because it has Self or associated type requirements**. Although it's not visible at first look, the reason of this error is that if you have a reference to an object via a `Comparable` pointer instance, you will have an opportunity to call its functions.
 
 Within the sort function let's take the first element in array to operate on it:
