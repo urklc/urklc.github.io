@@ -6,7 +6,7 @@ author: Uğur Kılıç
 
 Swift 5 introduces a great feature for people who use protocol oriented programming: **Opaque return types**, which will help you through the problems of creating a protocol with an associated type or self requirements.
 
-You already know the reason of infamous error that constraints you to use protocols that have associated types or Self requirements as generic constraints if you read my previous post: [Using protocols that have associated type requirements as a generic constraint ](2019-12-26-Using%20protocols%20that%20have%20associated%20type%20requirements%20as%20a%20generic%20constraint.md)
+You already know the reason of infamous error that constraints you to use protocols that have associated types or Self requirements as generic constraints if you read my previous post: [Using protocols that have associated type requirements as a generic constraint ](../Using-protocols-that-have-associated-type-requirements-as-a-generic-constraint/)
 
 Opaque return types help you to overcome this issue. Let's see with a real world example, not a hypotetical one. Let's say we are creating a network api and the Request structure is as follows:
 
