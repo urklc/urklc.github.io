@@ -3,7 +3,7 @@
 
 <head>
     
-    {% if site.google_analytics and site.github.prod %} 
+    {% if site.google_analytics and site.github.pages_env == "production" %} 
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
