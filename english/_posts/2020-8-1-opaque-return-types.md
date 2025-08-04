@@ -4,6 +4,8 @@ title: Opaque Return Types in Swift
 author: Uğur Kılıç
 ---
 
+> **Note:** This post was written in 2020 and discusses Swift's opaque return types. While the core concepts of opaque types remain valid, Swift has continued to evolve with improvements to protocol capabilities, type inference and generics. This content provides historical context on how Swift introduced and initially handled opaque return types. For current best practices, consider exploring Swift's modern protocol improvements and enhanced type system capabilities.
+
 Swift 5 introduces a great feature for people who use protocol oriented programming: **Opaque return types**, which will help you through the problems of creating a protocol with an associated type or self requirements.
 
 You already know the reason of infamous error that constraints you to use protocols that have associated types or Self requirements as generic constraints if you read my previous post: [Using protocols that have associated type requirements as a generic constraint ](../Using-protocols-that-have-associated-type-requirements-as-a-generic-constraint/)

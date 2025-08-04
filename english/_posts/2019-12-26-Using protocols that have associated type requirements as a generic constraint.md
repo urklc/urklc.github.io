@@ -4,6 +4,8 @@ title: Using protocols that have associated type requirements as a generic const
 author: Uğur Kılıç
 ---
 
+> **Note:** This post was written in 2019 and discusses Swift's handling of protocols with associated types. While the fundamental concepts remain relevant, Swift has evolved significantly since then with improvements to opaque types, type erasure patterns and protocol handling. This content provides historical context on how Swift previously handled such issues and how the language has evolved. For current best practices, consider exploring Swift's modern opaque return types and improved protocol capabilities.
+
 Whenever you go beyond classical protocol oriented programming practices, and use protocols for a variety of functionality across your code; you face this noted error with Swift. Next, you suddenly change most of your implementation or try to workaround it by searching solutions online.
 
 I guess understanding the reasoning behind this error leads to better software design before implementation. Let's say we have a `Comparable` protocol as: 

@@ -4,6 +4,8 @@ title: Type Erasure
 author: Uğur Kılıç
 ---
 
+> **Note:** This post was written in 2020 and discusses type erasure patterns in Swift. While the fundamental concept of type erasure remains a useful technique, Swift has evolved with improved protocol capabilities, better type inference and enhanced generics. This content provides historical context on how Swift previously handled type erasure and how the language has evolved. For current best practices, consider exploring Swift's modern protocol improvements and type system enhancements.
+
 I like writing about generic protocol types, and you like reading them. But now with another fancy concept **Type Erasure** I want to end current series. If you haven't read them yet, here are the links:
 
 1- [Using protocols that have associated type requirements as a generic constraint](../Using-protocols-that-have-associated-type-requirements-as-a-generic-constraint/)  
