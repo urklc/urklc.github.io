@@ -1,6 +1,6 @@
 ---
 layout: categories
-icon: fas fa-tag
-order: 99
+permalink: /categories/
 noindex: true
+sitemap: false
 ---
