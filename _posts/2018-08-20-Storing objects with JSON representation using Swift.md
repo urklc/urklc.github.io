@@ -23,7 +23,7 @@ Now first things first, let’s know our enemy classes that needs to be stored o
       let endDate: Date!
     }
 
-Simple.  `Trip` class that has an array of `DailyTrip` instances which have `Place` lists. Consider `Trip` as the whole trip, and `DailyTrip` as just one day of that trip as their names also indicate. I didn’t add required initializers and functions that manipulates the trip objects for classes. Also you might wonder why I used class for trip instances and struct for place. Since it’s not the topic of this story, still there are great explanations online: <http://stackoverflow.com/questions/24232799/why-choose-struct-over-class>
+Simple.  `Trip` class that has an array of `DailyTrip` instances which have `Place` lists. Consider `Trip` as the whole trip, and `DailyTrip` as just one day of that trip as their names also indicate. I didn’t add required initializers and functions that manipulates the trip objects for classes. Also you might wonder why I used class for trip instances and struct for place. Since it’s not the topic of this story, still there are great explanations online: <https://stackoverflow.com/questions/24232799/why-choose-struct-over-class>
 
 Now we create a `Writer` class for the `Trip` class and make it responsible for read-write operations:
 

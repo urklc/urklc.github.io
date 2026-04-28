@@ -65,6 +65,11 @@ defaults:
       layout: page
       permalink: /:title/
 
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
 sass:
   style: compressed
 
