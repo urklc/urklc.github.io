@@ -14,3 +14,4 @@ You can find me here:
 - GitHub — [urklc](https://github.com/urklc)
 - LinkedIn — [ugurkilic](https://www.linkedin.com/in/ugurkilic)
 - YouTube — [@urklc](https://www.youtube.com/@urklc)
+- Twitter — [@\_urklc](https://twitter.com/_urklc)
