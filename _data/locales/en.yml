@@ -1,0 +1,5 @@
+# Override the default Chirpy English strings.
+# Only keys present here override the gem's defaults.
+
+tabs:
+  archives: Posts
