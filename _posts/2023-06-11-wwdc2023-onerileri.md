@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "WWDC 2023: Ne izlemeli?"
+categories: [Türkçe]
 author: Uğur Kılıç
 ---
 

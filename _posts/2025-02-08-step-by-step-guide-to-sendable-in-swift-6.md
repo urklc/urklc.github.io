@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Step-by-Step Guide to Sendable in Swift 6
+categories: [English]
 author: Uğur Kılıç
 ---
 

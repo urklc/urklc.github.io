@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Using protocols that have associated type requirements as a generic constraint 
+categories: [English]
 author: Uğur Kılıç
 ---
 

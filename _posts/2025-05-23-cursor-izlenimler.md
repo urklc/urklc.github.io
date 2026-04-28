@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Cursor izlenimlerim"
+categories: [Türkçe]
 author: Uğur Kılıç
 ---
 

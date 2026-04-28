@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Interface Builder mı yoksa Programmatic UI mı?
+categories: [Türkçe]
 author: Uğur Kılıç
 ---
 

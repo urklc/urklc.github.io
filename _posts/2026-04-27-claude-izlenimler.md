@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Claude + Design izlenimlerim"
+categories: [Türkçe]
 author: Uğur Kılıç
 ---
 

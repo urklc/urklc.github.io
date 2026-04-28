@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Type Erasure
+categories: [English]
 author: Uğur Kılıç
 ---
 
