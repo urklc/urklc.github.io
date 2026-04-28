@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Storing objects with JSON representation using Swift
-categories: [English]
+categories: [iOS]
+tags: [en]
 author: Uğur Kılıç
 ---
 

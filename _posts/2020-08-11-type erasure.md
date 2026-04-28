@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Type Erasure
-categories: [English]
+categories: [iOS]
+tags: [en]
 author: Uğur Kılıç
 ---
 

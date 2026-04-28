@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "WWDC 2023: Ne izlemeli?"
-categories: [Türkçe]
+categories: [iOS]
+tags: [tr, wwdc]
 author: Uğur Kılıç
 ---
 

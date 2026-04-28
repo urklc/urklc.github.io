@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Interface Builder mı yoksa Programmatic UI mı?
-categories: [Türkçe]
+categories: [iOS]
+tags: [tr]
 author: Uğur Kılıç
 ---
 

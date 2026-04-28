@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Opaque Return Types in Swift
-categories: [English]
+categories: [iOS]
+tags: [en]
 author: Uğur Kılıç
 ---
 

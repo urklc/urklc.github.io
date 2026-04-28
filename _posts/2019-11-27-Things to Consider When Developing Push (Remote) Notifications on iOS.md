@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 6 Things to Consider When Developing Push (Remote) Notifications on iOS
-categories: [English]
+categories: [iOS]
+tags: [en]
 author: Uğur Kılıç
 ---
 
