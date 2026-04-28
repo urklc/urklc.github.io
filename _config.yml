@@ -1,93 +1,117 @@
-#
-# This file contains configuration flags to customize your site
-#
+# The Site Configuration
 
-# Name of your site (displayed in the header)
-name: Uğur Kılıç
+theme: jekyll-theme-chirpy
 
-# Short bio or description (displayed in the header)
+lang: en
+timezone: Europe/London
+
 title: Uğur Kılıç
-description: iOS Engineer
+tagline: "iOS Engineer · London"
+description: >-
+  iOS Engineer based in London. Notes on Swift, iOS, and indie apps.
 
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/urklc/urklc.github.io/master/images/urklc.jpg
-
-#
-# Flags below are optional
-#
-
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email:
-  facebook:
-  flickr:
-  github: https://github.com/urklc
-  instagram:
-  linkedin: https://www.linkedin.com/in/ugurkilic
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: 
-
-cayman-blog:
-  date_format: "%b %-d, %Y"
-
-github:
-  is_project_page: true
-
-
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus:
-
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: G-XQE7W2KV3T
-
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url: https://urklc.github.io
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
+url: "https://urklc.github.io"
 baseurl: ""
 
-#
-# !! You don't need to change any of the configuration flags below !!
-#
+github:
+  username: urklc
 
+twitter:
+  username: _urklc
+
+social:
+  name: Uğur Kılıç
+  email: ""
+  links:
+    - https://github.com/urklc
+    - https://www.linkedin.com/in/ugurkilic
+    - https://www.youtube.com/@urklc
+    - https://twitter.com/_urklc
+
+# Site avatar (served from local assets)
+avatar: /assets/img/avatar.jpg
+
+# Google Analytics
+analytics:
+  google:
+    id: G-XQE7W2KV3T
+
+# Comments engine — disabled
+comments:
+  provider:
+
+# Post and page settings
 permalink: /:title/
+paginate: 10
 
-# The release of Jekyll Now that you're using
-version: v1.2.0
+# Site theme: 'light', 'dark', or '' (auto)
+theme_mode:
 
-# Jekyll 3 now only supports Kramdown for Markdown
+# The CDN endpoint for media resources — use local serving
+cdn: ""
+
+# the avatar on sidebar, support local file or CORS resources
+img_cdn: ""
+
+# Default values for posts
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: false
+      toc: true
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
 kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
-  input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+  footnote_backlink: "&#8617;&#xfe0e;"
   syntax_highlighter: rouge
   syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
 
-# Set the Sass partials directory, as we're using @imports
 sass:
-  style: :expanded # You might prefer to minify using :compressed
+  style: compressed
 
-# Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
 
-# Exclude these files from your production _site
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
+  - "*.gem"
+  - "*.gemspec"
+  - tools
   - README.md
-  - CNAME
+  - LICENSE
+  - "*.config.js"
+  - package*.json
+  - docs
 
-theme: jekyll-theme-cayman
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/

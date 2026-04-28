@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -sL 'https://itunes.apple.com/lookup?id=405878985&entity=software&limit=200')",
+      "Bash(python3 -c \"import sys, json; d=json.load\\(sys.stdin\\); print\\('count:', d.get\\('resultCount'\\)\\); [print\\(r.get\\('trackName'\\),'|',r.get\\('trackViewUrl'\\),'|',r.get\\('artworkUrl100'\\)\\) for r in d.get\\('results',[]\\) if r.get\\('wrapperType'\\)=='software']\")",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git checkout *)",
+      "Bash(ruby --version)",
+      "Bash(bundle --version)",
+      "Bash(rbenv version *)",
+      "Bash(rvm current *)",
+      "Bash(asdf current *)",
+      "Read(//opt/homebrew/opt/**)",
+      "Read(//usr/local/**)",
+      "Bash(brew list *)"
+    ]
+  }
+}

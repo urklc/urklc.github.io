@@ -1,0 +1,15 @@
+- type: github
+  icon: "fab fa-github"
+
+- type: linkedin
+  icon: "fab fa-linkedin"
+
+- type: youtube
+  icon: "fab fa-youtube"
+
+- type: twitter
+  icon: "fa-brands fa-x-twitter"
+
+- type: rss
+  icon: "fas fa-rss"
+  noblank: true
