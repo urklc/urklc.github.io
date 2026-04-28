@@ -3,3 +3,6 @@
 
 tabs:
   archives: Posts
+
+panel:
+  categories: Categories

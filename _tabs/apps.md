@@ -1,6 +1,6 @@
 ---
 icon: fas fa-mobile-screen
-order: 4
+order: 3
 title: Apps
 ---
 

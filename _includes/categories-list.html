@@ -1,0 +1,16 @@
+<!-- Categories quick-link panel (custom, mirrors trending-tags style) -->
+
+{% assign categories_sorted = site.categories | sort %}
+
+{% if categories_sorted.size > 0 %}
+  <section>
+    <h2 class="panel-heading">{{- site.data.locales[include.lang].panel.categories | default: 'Categories' -}}</h2>
+    <div class="d-flex flex-wrap mt-3 mb-1 me-3">
+      {% for cat in categories_sorted %}
+        {% assign cat_name = cat | first %}
+        {% assign url = cat_name | slugify | url_encode | prepend: '/categories/' | append: '/' %}
+        <a class="post-tag btn btn-outline-primary" href="{{ url | relative_url }}">{{ cat_name }}</a>
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}
